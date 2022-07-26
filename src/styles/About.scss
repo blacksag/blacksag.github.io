@@ -1,0 +1,56 @@
+.about-section {
+    padding: 32px;
+
+    .head{
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        // border: solid 1px red;
+        .head-line {
+            width: 70px;
+            height: 4px;
+            background-color: #000000;
+            border: none;
+            border-radius: 2px;
+            margin: auto;
+            margin-top: 8px;
+        }
+    }
+
+    
+
+    .content {
+        // border: solid 1px red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+        .image {
+            flex: 0.8;
+            min-width: 280px;
+            max-width: 360px;
+            padding: 16px;
+            img {
+                width: 100%;
+                border-radius: 32px 8px 32px 8px;
+                // filter: grayscale(70%);
+            }
+            // img:hover {
+            //     filter:grayscale(30%);
+            // }
+        }
+        .parahs {
+            flex: 1;
+            min-width: 280px;
+            font-family: 'Crimson Text', serif;
+            padding: 16px;
+            p {
+                // border: solid 1px red;
+                margin: 24px 8px;
+                text-align: justify;
+            }
+        }
+    }
+}

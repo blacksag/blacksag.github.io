@@ -1,0 +1,83 @@
+$title-width: 5.5em;
+$col-min-width: 4em;
+$grid-border: 1px solid #BEC7D18F;
+
+.chart{
+    overflow-x: scroll;
+
+    .row-heads {
+        display: flex;
+        flex-direction: row;
+        min-width: max-content;
+            
+        .row-title {
+            width: $title-width;
+            flex: none;
+            padding: 5px;
+        }
+
+        .row-contents {
+            display:flex;
+            flex:1;
+
+            .col-content {
+                min-width: $col-min-width;
+                flex:1;
+                align-self: center;
+            }
+        }
+    }
+
+    .row-data {
+        display: flex;
+        flex-direction: row;
+        border-top: $grid-border;
+        min-width: max-content;
+            
+        .row-title {
+            width: $title-width;
+            flex: none;
+            padding: 4px;
+        }
+
+        .row-contents {
+            position: relative;
+            display:flex;
+            flex:1;
+            align-items: center;
+
+            .col-content {
+                min-width: $col-min-width;
+                border-left: $grid-border;
+                width: fit-content;
+                height: 100%;
+                flex:1;
+            }
+
+            .gantt-event {
+                position: absolute;
+                text-align: center;
+                border-radius: 4px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .row-data:last-child {
+        border-bottom: $grid-border;
+    }
+}
+
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+
+    .input-group {
+        margin: 4px;
+
+        .input-time {
+            width: 32px;
+        }
+    }
+}

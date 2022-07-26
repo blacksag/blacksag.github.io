@@ -1,0 +1,23 @@
+.fractal-inputs {
+    font-family: 'Crimson Text', serif;
+    padding: 8px;
+    margin-left: 16px;
+
+    input[type="range"] {
+        vertical-align: middle;
+        margin-bottom: 1px;
+    }
+
+    input[type="radio"] {
+        margin: 4px 6px;
+        vertical-align: text-bottom;
+    }
+
+    input[type="button"] {
+        margin-top: 8px;
+        padding: 8px;
+        background: none;
+        color: white;
+        border: solid 1px white;
+    }
+}
