@@ -117,14 +117,16 @@ function FractalTree() {
                 <Sketch setup={setup}/>
             </div>
             <div style={{flex:1.4}}>
-                <p style={{marginBottom: '0px',paddingBottom: '8px'}}>
+                <p style={{paddingBottom: '8px'}}>
                     A fractal tree is one of the famous fractal geomerty that can be implemented 
-                    using <a href="https://en.wikipedia.org/wiki/L-system#Example_2:_Fractal_(binary)_tree">L-System</a> grammar
+                    using <a href="https://en.wikipedia.org/wiki/L-system#Example_2:_Fractal_(binary)_tree">
+                        L-System grammar<i className="fa fa-external-link" style={{'fontSize': '14px'}} aria-hidden="true"></i>
+                        </a>&nbsp;
                     which is very similar to other grammers of Chomsky hierarchy.
                     The tree is formed on a canvas using Turtle graphics technique utilizing p5.js library.
                     <br/>
                     <br/>
-                    Rule used: F &rarr; {rules[grammar].b}
+                    <b>Click on the button</b> to view different outputs with different variations.
                 </p>
                 <div className="fractal-inputs">
                     <div>
@@ -141,7 +143,12 @@ function FractalTree() {
                             </label>
                         )}
                     </div>
-                    <input type="button" value="Generate" onClick={loopLevel}/>
+                    <div>
+                        Rule used: F &rarr; {rules[grammar].b}
+                    </div>
+                    <button onClick={loopLevel}>
+                        Generate <i className="fa fa-tree" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
         </div>
